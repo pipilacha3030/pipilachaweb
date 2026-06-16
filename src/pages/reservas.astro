@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Reservar · Pipilacha"
+  description="Reserva en Pipilacha. 16 plazas por servicio, jueves a domingo, dos turnos. Menú degustación 85 € por persona."
+>
+
+  <section class="page-header">
+    <p class="eyebrow">Reservas</p>
+    <h1>Reservar<br>en Pipilacha</h1>
+    <p>Elige día y turno abajo. Dieciséis plazas por servicio: ocho en la barra de iroko, frente a la cocina, y ocho en mesa.</p>
+  </section>
+
+  <!-- WIDGET THEFORK (reserva online, inline) -->
+  <section class="reserva-widget" id="reservar-widget">
+    <div class="reserva-widget__inner">
+      <iframe
+        src="https://widget.thefork.com/867dcee9-49b5-47ed-90c0-c6c87149b328"
+        allow="payment *"
+        title="Reservas Pipilacha"
+        loading="lazy"
+        style="width:100%; min-height:800px; border:none;">
+      </iframe>
+    </div>
+  </section>
+
+</Base>
